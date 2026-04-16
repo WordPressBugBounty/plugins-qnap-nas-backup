@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 // ==================
 // = Plugin Version =
 // ==================
-define( 'QNAP_VERSION', '1.0.5' );
+define( 'QNAP_VERSION', '1.0.6' );
 
 // ===============
 // = Plugin Name =

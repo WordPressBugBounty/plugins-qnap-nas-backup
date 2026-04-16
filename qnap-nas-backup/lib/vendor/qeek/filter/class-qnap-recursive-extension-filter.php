@@ -16,7 +16,7 @@ class QNAP_Recursive_Extension_Filter extends \RecursiveFilterIterator {
 		}
 	}
 
-	public function accept() {
+	public function accept(): bool {
 		if ( $this->getInnerIterator()->isFile() ) {
 			if ( ! in_array( pathinfo( $this->getInnerIterator()->getFilename(), PATHINFO_EXTENSION ), $this->include ) ) {
 				return false;
@@ -26,7 +26,7 @@ class QNAP_Recursive_Extension_Filter extends \RecursiveFilterIterator {
 		return true;
 	}
 
-	public function getChildren() {
+	public function getChildren(): ?QNAP_Recursive_Extension_Filter {
 		return new self( $this->getInnerIterator()->getChildren(), $this->include );
 	}
 }

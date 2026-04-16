@@ -6,7 +6,7 @@ namespace qnap;
  * Description: Backup, migrate restore your WordPress website with QNAP NAS.
  * Author: QNAP
  * Author URI: https://service.qnap.com/
- * Version: 1.0.5
+ * Version: 1.0.6
  * Text Domain: qnap-appbackup
  * Domain Path: /languages
  * Network: True

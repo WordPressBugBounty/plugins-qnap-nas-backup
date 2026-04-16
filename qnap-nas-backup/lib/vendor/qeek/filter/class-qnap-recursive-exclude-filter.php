@@ -18,7 +18,7 @@ class QNAP_Recursive_Exclude_Filter extends \RecursiveFilterIterator {
 		}
 	}
 
-	public function accept() {
+	public function accept(): bool {
 		if ( in_array( qnap_replace_forward_slash_with_directory_separator( $this->getInnerIterator()->getSubPathname() ), $this->exclude ) ) {
 			return false;
 		}
@@ -42,7 +42,7 @@ class QNAP_Recursive_Exclude_Filter extends \RecursiveFilterIterator {
 		return true;
 	}
 
-	public function getChildren() {
+	public function getChildren(): ?QNAP_Recursive_Exclude_Filter {
 		return new self( $this->getInnerIterator()->getChildren(), $this->exclude );
 	}
 }

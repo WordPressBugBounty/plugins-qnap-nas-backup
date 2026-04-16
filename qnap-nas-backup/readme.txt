@@ -2,9 +2,9 @@
 Contributors: qnapplugin
 Tags: backup, migrate, restore, qnap, nas
 Requires at least: 3.3
-Tested up to: 6.4
+Tested up to: 6.9
 Requires PHP: 7.2
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -32,6 +32,10 @@ Learn more: [https://qnap.to/48qpmb](https://qnap.to/48qpmb)
 Alternatively you can download the plugin using the download button on this page and then upload the qnap folder to the /wp-content/plugins/ directory then activate throught the Plugins dashboard in WordPress
 
 == Changelog ==
+= 1.0.6 =
+* Compatible with PHP 8.1+
+* Fix PHP warning caused by missing template files during restore
+
 = 1.0.5 =
 * Fix compatibility issues with WordPress 6.4
 
