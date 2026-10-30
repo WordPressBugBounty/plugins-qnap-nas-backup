@@ -12,6 +12,8 @@ Backup, migrate restore your WordPress website with QNAP NAS.
 
 == Description ==
 
+**End of life notice:** As of October 30, 2026, QNAP NAS Backup has reached end of life (EOL), together with HDP for WordPress (formerly Multi-Application Recovery Service, MARS), the QNAP NAS app it requires. Neither will receive new releases or technical support, and HDP for WordPress is no longer available in the QNAP App Center.
+
 **This plugin needs to be run with the Multi-Application Recovery Service (MARS).**
 
 This plugin can simply backup and restore your WordPress website with QNAP NAS, including the database, mediafiles, plugins and themes with unlimited size.
